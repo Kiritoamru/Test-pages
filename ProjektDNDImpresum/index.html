@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../ProjectStyle/style.css">
+    <title>Impressum</title>
+</head>
+<body>
+<header>
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="navigation">
+            <li><a href="../index.html">Startseite</a></li>
+            <li><a href="../ProjektDNDabout/index.html">Über uns</a></li>
+            <li><a href="../ProjektDNDfeatures/index.html">Features</a></li>
+            <li><a href="../ProjektDNDcontact/index.html">Kontakt</a></li>
+            <li><a href="../ProjektDNDimpressum/index.html" class="active">Impressum</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="impressum-container">
+    <section class="impressum-hero">
+        <div class="impressum-overlay">
+            <h1>Impressum</h1>
+            <p><strong>Yves Cornu</strong></p>
+            <p>8554 Bonau</p>
+            <p>Gehrauerstrasse 16</p>
+            <p>Email: <a href="mailto:yves@cornu.tech">yves@cornu.tech</a></p>
+            <h2>Quellenangaben</h2>
+            <p>Alle Bilder wurden mit Hilfe von <a href="https://chatgpt.com/">ChatGPT</a>  generiert.</p>
+            <p>Videos sind aus der <a href="https://stock.adobe.com/ch_de/">Adobe Stock Libery</a> </p>
+            <h2>Rechtliche Hinweise</h2>
+            <p>Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der abrufbaren Inhalte erfolgt auf eigene Gefahr des Nutzers.</p>
+            <h2>Haftung für Links</h2>
+            <p>Diese Website enthält Verknüpfungen zu Websites Dritter ("externe Links"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten.</p>
+            <h2>Urheberrecht</h2>
+            <p>Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Tavern</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            navUl.style.display = navUl.style.display === 'flex' ? '' : 'flex';
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../ProjectStyle/style.css">
+    <title>Features</title>
+</head>
+<body>
+<header>
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="navigation">
+            <li><a href="../index.html">Startseite</a></li>
+            <li><a href="../ProjektDNDabout/index.html">Über uns</a></li>
+            <li><a href="../ProjektDNDfeatures/index.html" class="active">Features</a></li>
+            <li><a href="../ProjektDNDcontact/index.html">Kontakt</a></li>
+            <li><a href="../ProjektDNDImpresum/index.html">Impressum</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="feature-img">
+    <h1 class="header-features">Features</h1>
+    <div class="feature-text">
+        <p class="intro-text">Tauchen Sie ein in die Welt von Tavern! Entdecken Sie unsere einzigartigen Funktionen, die
+            Ihre Abenteuer unvergesslich machen.</p>
+    </div>
+    <div class="feature-grid">
+        <a href="../ProjektDNDfeature1/index.html" class="feature-item">
+            <img src="../Projectimg/search.webp" alt="Suchfunktion">
+            <h2>Suchfunktion</h2>
+            <p>Finden Sie Mitspieler basierend auf Sprache, Region und Zeitzone.</p>
+        </a>
+        <a href="../ProjektDNDfeature2/index.html" class="feature-item">
+            <img src="../Projectimg/virtual.webp" alt="Virtueller Spieltisch">
+            <h2>Virtueller Spieltisch</h2>
+            <p>Erleben Sie interaktive Spieleabende mit unserem virtuellen Spieltisch.</p>
+        </a>
+        <a href="../ProjektDNDfeature3/index.html" class="feature-item">
+            <img src="../Projectimg/managment.webp" alt="Charakterverwaltung">
+            <h2>Charakterverwaltung</h2>
+            <p>Verwalten Sie Ihre Charakterblätter und Spielverläufe an einem Ort.</p>
+        </a>
+        <a href="../ProjektDNDfeature4/index.html" class="feature-item">
+            <img src="../Projectimg/KiPlayer.webp" alt="KI-gestützte Ersatzspieler">
+            <h2>KI-gestützte Ersatzspieler</h2>
+            <p>Nutzen Sie unsere KI-gestützten Spieler und Dungeon Master.</p>
+        </a>
+        <a href="../ProjektDNDfeature5/index.html" class="feature-item">
+            <img src="../Projectimg/event.webp" alt="Eventplanung">
+            <h2>Eventplanung</h2>
+            <p>Organisieren und planen Sie Ihre Spieleabende und Events mühelos.</p>
+        </a>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 Tavern</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            navUl.style.display = navUl.style.display === 'flex' ? '' : 'flex';
+        });
+    });
+</script>
+</body>
+</html>

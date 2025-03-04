@@ -1,0 +1,508 @@
+/* Allgemeine Stile */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(123 79 70);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(104 66 59);
+}
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #333; /* Fallback background color */
+}
+
+header {
+    background-color: rgba(62, 39, 35, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 5px solid #d7ccc8;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #d7ccc8;
+}
+
+.active {
+    color: #a49b98;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.video-overlay h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.video-overlay p {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.hero-image-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(62, 39, 35, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-overlay p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: rgba(62, 39, 35, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 5px solid #d7ccc8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Verringert die Höhe des Headers */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 2em;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.header-features {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+/* Stile für die Feature-Liste */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background: rgba(62, 39, 35, 0.8);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    background: rgba(62, 39, 35, 1);
+}
+
+.feature-item img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 15px;
+}
+
+.feature-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: break-spaces;
+    hyphens: auto;
+}
+
+.feature-item p {
+    font-size: 1em;
+}
+
+.feature-img {
+    background-image: url("../Projectimg/tavern_interior.png");
+    background-size: cover;
+    height: max-content;
+    padding-top: 4em;
+    min-height: 100vh;
+}
+
+.feature-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 400px;
+    background: rgba(62, 39, 35, 0.8);
+    padding: 10px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Stile für das Kontaktformular */
+.contact-img {
+    background-image: url("../Projectimg/Quest_Board.webp");
+    background-size: cover;
+    height: max-content;
+    padding-top: 4em;
+    min-height: 100vh;
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+form {
+    background: rgba(62, 39, 35, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    backdrop-filter: blur(2px);
+    margin: 20px auto; /* Zentriert und unter der Navigation */
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #d7ccc8;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #a1887f;
+}
+
+/* Über uns Stile */
+.about-container {
+    background-image: url("../Projectimg/TaverneInnen.webp"); /* Hintergrundbild */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: block;
+    padding-top: 4em;
+    text-align: center; /* Zentriert den Header */
+}
+
+.header-about {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+.about-hero {
+    background: rgba(62, 39, 35, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80vh;
+    backdrop-filter: blur(2px);
+    margin: 0 auto; /* Zentriert den Container */
+    overflow-y: auto; /* Scrollbar bei Überlänge */
+}
+
+.about-overlay p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Impressum Stile */
+.impressum-container {
+    background-image: url("../Projectimg/Quest_Board.webp"); /* Hintergrundbild */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 50px; /* Padding für Platz unter der Navigation */
+}
+
+.impressum-hero {
+    background: rgba(62, 39, 35, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80vh;
+    backdrop-filter: blur(2px);
+    overflow-y: auto; /* Scrollbar bei Überlänge */
+}
+
+.impressum-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.impressum-overlay p,
+.impressum-overlay h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.impressum-overlay a {
+    color: inherit; /* Gleiche Farbe wie der umgebende Text */
+    text-decoration: none; /* Keine Unterstreichung */
+}
+
+.impressum-overlay a:hover {
+    color: #d7ccc8; /* Farbe beim Hover */
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+/* Feature Detail Seite */
+.feature-detail-container {
+    background-image: url("../Projectimg/TaverneInnen.webp"); /* Hintergrundbild */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 50px; /* Padding für Platz unter der Navigation */
+    text-align: center; /* Zentriert den Header */
+}
+
+.feature-detail-hero {
+    background: rgba(62, 39, 35, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80vh;
+    margin: 0 auto; /* Zentriert den Container */
+    overflow-y: auto; /* Scrollbar bei Überlänge */
+}
+
+.feature-detail-hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.feature-detail-image {
+    max-width: 300px; /* Vergrößert das Such-Icon */
+    height: auto;
+    margin: 20px auto;
+    display: block; /* Zentriert das Bild */
+}
+
+.feature-detail-content {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.feature-detail-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-detail-content p,
+.feature-detail-content ul,
+.feature-detail-content blockquote {
+    margin: 10px 0;
+}
+
+.feature-detail-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.feature-detail-content blockquote {
+    background: rgba(62, 39, 35, 0.8);
+    padding: 10px;
+    border-left: 5px solid #d7ccc8;
+    margin: 20px 0;
+    font-style: italic;
+    color: #d7ccc8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-detail-container, .impressum-container, .about-container {
+        padding: 70px 20px 30px; /* Anpassung des Paddings für mobile Ansicht */
+    }
+
+    .feature-detail-hero, .impressum-hero, .about-hero {
+        max-width: 100%;
+        max-height: 70vh; /* Verringerung der max. Höhe für mobile Ansicht */
+    }
+
+    header {
+        padding: 10px 0; /* Verringert die Höhe des Headers */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 2em;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}

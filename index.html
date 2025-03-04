@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ProjectStyle/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tavern Begins</title>
+</head>
+<body>
+<header>
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="navigation">
+            <li><a href="../ProjektDND/index.html" class="active">Startseite</a></li>
+            <li><a href="ProjektDNDabout/index.html">Über uns</a></li>
+            <li><a href="ProjektDNDfeatures/index.html">Features</a></li>
+            <li><a href="ProjektDNDcontact/index.html">Kontakt</a></li>
+            <li><a href="ProjektDNDImpresum/index.html">Impressum</a></li>
+            <li><a href="formular/index.html">Formular</a> </li>
+            <li><a href="db-demo/index.html">DB-Demo</a> </li>
+        </ul>
+    </nav>
+</header>
+<div class="video-background">
+    <video autoplay loop muted>
+        <source src="Projectimg/Tavern_Background.mov" type="video/mp4">
+        Ihr Browser unterstützt kein HTML5 Video.
+    </video>
+    <div class="video-overlay">
+        <h1>Tavern</h1>
+        <p>Tretet ein und erkundet das Abenteuer</p>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Tavern</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            navUl.style.display = navUl.style.display === 'flex' ? '' : 'flex';
+        });
+    });
+</script>
+</body>
+</html>

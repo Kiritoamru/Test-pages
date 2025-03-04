@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, 1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../ProjectStyle/style.css">
+    <title>Über uns</title>
+</head>
+<body>
+<header>
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="navigation">
+            <li><a href="../index.html">Startseite</a></li>
+            <li><a href="../ProjektDNDabout/index.html" class="active">Über uns</a></li>
+            <li><a href="../ProjektDNDfeatures/index.html">Features</a></li>
+            <li><a href="../ProjektDNDcontact/index.html">Kontakt</a></li>
+            <li><a href="../ProjektDNDImpresum/index.html">Impressum</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="about-container">
+    <h1 class="header-features">Über uns</h1>
+    <section class="about-hero">
+        <div class="about-overlay">
+            <p>Tavern ist eine Plattform zur Vernetzung von PnP- und LARP-Enthusiasten.</p>
+            <ul>
+                <p><strong>Unsere Mission:</strong> Spieler und Spielleiter zusammenzubringen, um unvergessliche Abenteuer zu erleben.</p>
+                <p><strong>Für alle:</strong> Egal, ob Sie ein erfahrener Spieler oder ein Neuling sind, wir bieten die Werkzeuge und die Community, die Sie benötigen, um tief in die Welt der Pen-and-Paper- und Live-Action-Rollenspiele einzutauchen.</p>
+                <p><strong>Verbindungen stärken:</strong> Wir glauben daran, dass Spiele Menschen näher zusammenbringen und Freundschaften über die Grenzen der Realität hinaus schaffen können.</p>
+                <p><strong>Neue Möglichkeiten:</strong> Mit Tavern möchten wir diese Verbindungen stärken und neue Möglichkeiten für gemeinsame Abenteuer schaffen.</p>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Tavern</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            navUl.style.display = navUl.style.display === 'flex' ? '' : 'flex';
+        });
+    });
+</script>
+</body>
+</html>
